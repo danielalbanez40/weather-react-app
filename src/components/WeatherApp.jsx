@@ -6,7 +6,7 @@ import styles from './weatherApp.module.css';
 const WeatherApp = () => {
   const [weather, setWeather] = useState(null);
 
-  console.log({ styles });
+  // console.log({ styles });
   useEffect(() => {
     loadInfo();
   }, []);
@@ -23,7 +23,7 @@ const WeatherApp = () => {
       );
       const json = await request.json();
       setWeather(json);
-      console.log(json);
+      // console.log(json);
     } catch (error) {}
   }
 
