@@ -9,7 +9,7 @@ const WeatherMainInfo = ({weather}) => {
       <div className={styles.row}>
         <div>
           <img
-            src={`http:${weather?.current.condition.icon}`}
+            src={`https:${weather?.current.condition.icon}`}
             width="128px"
             alt={weather?.current.condition.text}
           />
